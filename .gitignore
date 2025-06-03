@@ -1,0 +1,169 @@
+node_modules
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+
+# Next.js
+galaxy-web-ui/.next/
+galaxy-web-ui/out/
+galaxy-web-ui/node_modules/
+galaxy-web-ui/.env.local
+galaxy-web-ui/.env.development.local
+galaxy-web-ui/.env.test.local
+galaxy-web-ui/.env.production.local
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local
+.env.backend
+.env.production
+
+# 🔒 환경변수 파일들 (절대 업로드 금지!)
+.env*
+*.env
+.env.backend
+.env.frontend
+.env.production
+.env.development
+.env.local
+.env.test
+config.json
+secrets.json
+
+# 🔑 API 키와 민감한 정보
+*_key.txt
+*_secret.txt
+*.pem
+*.p12
+*.key
+*.crt
+sk-*
+co-*
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 🌐 가상환경들
+.venv/
+.venv_*/
+.venv_clean/
+.venv_render/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 📝 로그 파일들
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 💾 데이터베이스 파일들
+*.db
+*.sqlite
+*.sqlite3
+
+# 🗂️ OS 및 에디터 파일들
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 📦 Node.js
+node_modules/
+.npm
+.eslintcache
+
+# ⚛️ Next.js
+.next/
+out/
+.vercel
+
+# 🔧 빌드 결과물들
+build/
+dist/
+*.tsbuildinfo
+.coverage
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 🚮 임시 파일들
+.cache/
+.temp/
+.tmp/
+*.tmp
+*.temp
+
+# 🚨 민감한 디렉토리들
+delete_folder/
+old_*/
+backup_*/
+temp_*/
+
+# 📄 기타 민감한 파일들
+*.backup
+*.bak
+*.orig

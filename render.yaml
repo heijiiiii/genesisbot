@@ -1,0 +1,30 @@
+services:
+  # 백엔드 API 서버
+  - type: web
+    name: genesisbot-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python api_server.py"
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: PIP_NO_CACHE_DIR
+        value: "1"
+    # 환경변수는 Render 대시보드에서 직접 설정
+    # OPENAI_API_KEY, COHERE_API_KEY, SUPABASE_URL, SUPABASE_KEY 등
+
+  # 프론트엔드 (필요시)
+  - type: web
+    name: genesisbot-frontend
+    env: node
+    buildCommand: "cd genesis-ui-migration && npm install && npm run build"
+    startCommand: "cd genesis-ui-migration && npm start"
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: "18"
+    # 프론트엔드 환경변수도 Render 대시보드에서 설정
+    # NEXT_PUBLIC_API_URL 등 
